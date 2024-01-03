@@ -3,22 +3,53 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Contoh Website</title>
+    <title>Minimalist Form</title>
+    <style>
+        body {
+            margin: 0;
+            padding: 0;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height: 100vh;
+            background-color: #f0f0f0;
+        }
+
+        form {
+            display: flex;
+            flex-direction: column;
+            background-color: #ffffff;
+            padding: 20px;
+            border-radius: 10px;
+            box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+        }
+
+        input {
+            margin-bottom: 10px;
+            padding: 10px;
+            border: 1px solid #cccccc;
+            border-radius: 5px;
+        }
+
+        button {
+            padding: 10px;
+            background-color: #007bff;
+            color: #ffffff;
+            border: none;
+            border-radius: 5px;
+            cursor: pointer;
+        }
+
+        button:hover {
+            background-color: #0056b3;
+        }
+    </style>
 </head>
 <body>
-    <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Quae, nihil. Dolorem, omnis consequatur iste, obcaecati qui in quod ea numquam nobis, soluta unde? Dicta, obcaecati consequuntur reiciendis impedit eligendi repellat?</p>
-    <form action="">
-        <input type="text">
-        <input type="submit">
-        <input type="reset">
-        <input type="button">
-        <input type="image">
-        <input type="file">
-        <input type="hidden">
-        <input type="radio">
-        <input type="checkbox">
-        <input type="range">
-        <input type="color"> 
+    <form>
+        <input type="text" placeholder="Your Name">
+        <input type="email" placeholder="Your Email">
+        <button type="submit">Submit</button>
     </form>
 </body>
 </html>
